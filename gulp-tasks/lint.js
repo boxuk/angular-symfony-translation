@@ -1,7 +1,8 @@
 'use strict';
 
 var gulp = require('gulp'),
-    gjslint = require('gulp-gjslint');
+    gjslint = require('gulp-gjslint'),
+    src = ['src/**/*.js', 'test/integration/**/*.js'];
 
 /**
  * Task: lint
@@ -11,7 +12,7 @@ var gulp = require('gulp'),
  * Reports errors to the console.
  */
 gulp.task('lint', function() {
-    return gulp.src('src/**/*.js')
+    return gulp.src(src)
         .pipe(gjslint())
         .pipe(gjslint.reporter('console'));
 });
@@ -27,7 +28,7 @@ gulp.task('lint', function() {
  * Useful for CI environments.
  */
 gulp.task('lint:ci', function() {
-    return gulp.src('src/**/*.js')
+    return gulp.src(src)
         .pipe(gjslint())
         .pipe(gjslint.reporter('console'))
         .pipe(gjslint.reporter('fail'));

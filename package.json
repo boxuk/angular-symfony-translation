@@ -4,13 +4,14 @@
   "description": "Angular module for using translations exposed by Symfony2.",
   "main": "build/app.js",
   "scripts": {
-    "test": "gulp karma:ci && gulp lint:ci",
+    "test": "gulp lint:ci && gulp karma:ci && gulp karma:integration",
     "prepublish": "bower install && gulp build"
   },
   "author": "Box UK <http://www.boxuk.com>",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.11",
+    "chalk": "^0.5.1",
     "closure-compiler-stream": "^0.1.13",
     "gulp": "^3.8.8",
     "gulp-gjslint": "^0.1.3",

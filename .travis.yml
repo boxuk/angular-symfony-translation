@@ -1,8 +1,7 @@
 language: node_js
 
 node_js:
-  - 0.10
-  - 0.11
+  - '0.10'
 
 branches:
   only:
@@ -26,3 +25,5 @@ install:
 script:
   - gulp lint:ci
   - gulp karma:ci
+  - gulp karma:integration1x
+  - gulp karma:integration2x
