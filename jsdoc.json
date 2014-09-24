@@ -1,0 +1,14 @@
+{
+    "source": {
+        "include": [
+            "src/*.js"
+        ],
+        "excludePattern": "(\\.spec)\\.js$"
+    },
+
+    "opts": {
+        "destination": "./jsdoc/",
+        "private": true,
+        "recurse": true
+    }
+}

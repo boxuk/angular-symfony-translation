@@ -1,0 +1,38 @@
+{
+  "name": "angular-symfony-translation",
+  "version": "0.0.1",
+  "authors": [
+    "Box UK <http://www.boxuk.com>"
+  ],
+  "description": "Integrates AngularJS with Symfony2 translations.",
+  "moduleType": [
+    "global"
+  ],
+  "keywords": [
+    "angular",
+    "symfony",
+    "translation",
+    "symfony2",
+    "angularjs",
+    "translations",
+    "bazinga",
+    "boxuk"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "gulp-tasks",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angularjs": "~1.2.25",
+    "angular-mocks": "~1.2.25",
+    "es5-shim": "~4.0.3",
+    "closure-compiler": "~0.2.6",
+    "closure-library-externs": "git@github.com:google/closure-compiler.git#v20140814",
+    "closurelibrary": "*"
+  }
+}

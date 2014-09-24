@@ -1,0 +1,11 @@
+.idea
+.travis.yml
+bower_components
+bower.json
+coverage
+gulp-tasks
+Gulpfile.js
+TODO.md
+karma.conf.js
+jsdoc.json
+closure.config.js

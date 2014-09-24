@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - 0.10
+  - 0.11
+
+branches:
+  only:
+    - master
+
+sudo: false
+
+cache:
+  directories:
+    - /home/travis/.npm
+    - /home/travis/.cache/bower
+    - node_modules
+    - bower_components
+
+matrix:
+  fast_finish: true
+
+install:
+  - npm install
+
+script:
+  - gulp lint:ci
+  - gulp karma:ci
