@@ -82,3 +82,9 @@ salmon: "{0} No salmon today, sorry.|{1} We have a single salmon!|[1,Inf] Woah, 
 <!-- With custom domain -->
 <p>{{ 'salmon' | transChoice: 5: {'count': 5}: 'my_domain' }}</p>
 ```
+
+## System overview
+
+Probably only relevant if you're planning on developing this further:
+
+![System diagram](/docs/system-overview.png)
