@@ -1,8 +1,8 @@
 language: node_js
 
 node_js:
-  - 0.10
-  - 0.11
+  - '0.10'
+  - '0.11'
 
 branches:
   only:
@@ -18,6 +18,9 @@ cache:
     - bower_components
 
 matrix:
+  allow_failures:
+    - node_js: '0.11'
+
   fast_finish: true
 
 install:
@@ -26,3 +29,5 @@ install:
 script:
   - gulp lint:ci
   - gulp karma:ci
+  - gulp karma:integration1x
+  - gulp karma:integration2x

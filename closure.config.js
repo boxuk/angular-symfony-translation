@@ -52,7 +52,9 @@ exports.createConfig = function(options)
             path.resolve(
                 bowerPath +
                     '/closure-library-externs/contrib/externs/angular-1.2.js'
-            )
+            ),
+
+            'externs/translator.js'
         ],
 
         js_output_file: 'build/' + fileName,
@@ -60,7 +62,7 @@ exports.createConfig = function(options)
         // Wrap compiled code in IIFE to protect global namespace,
         // and add URL to sourcemap.
         output_wrapper: '(function(){%output%})();' +
-            '//# sourceMappingURL=/assets/angular.mcc.js/' + fileName + '.map',
+            '//# sourceMappingURL=' + fileName + '.map',
 
         // Generate source maps
         create_source_map: 'build/' + fileName + '.map',

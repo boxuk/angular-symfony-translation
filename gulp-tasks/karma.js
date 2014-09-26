@@ -1,8 +1,10 @@
 'use strict';
 
 var gulp = require('gulp'),
+    chalk = require('chalk'),
     karma = require('karma').server,
-    karmaConfig = require('../karma.conf');
+    unitConfig = require('../karma.unit.conf'),
+    integrationConfigFactory = require('../karma.integration.conf');
 
 /**
  * Task: karma:ci
@@ -16,10 +18,10 @@ var gulp = require('gulp'),
  * to run locally.
  */
 gulp.task('karma:ci', function(done) {
-    karmaConfig.singleRun = true;
-    karmaConfig.autoWatch = false;
+    unitConfig.singleRun = true;
+    unitConfig.autoWatch = false;
 
-    karma.start(karmaConfig, done);
+    karma.start(unitConfig, done);
 });
 
 /**
@@ -34,8 +36,47 @@ gulp.task('karma:ci', function(done) {
  * Can be used during development.
  */
 gulp.task('karma:tdd', function(done) {
-    karmaConfig.singleRun = false;
-    karmaConfig.autoWatch = true;
+    unitConfig.singleRun = false;
+    unitConfig.autoWatch = true;
 
-    karma.start(karmaConfig, done);
+    karma.start(unitConfig, done);
+});
+
+/**
+ * Task: karma:integration
+ *
+ * Runs all integration tests.
+ */
+gulp.task('karma:integration', ['karma:integration1x', 'karma:integration2x']);
+
+/**
+ * Task: karma:integration1x
+ *
+ * Run integrations tests against version 1.x of the Translation bundle.
+ */
+gulp.task('karma:integration1x', function(done) {
+    var translatorLib = 'translator-1.2.js',
+        config = integrationConfigFactory(translatorLib);
+
+    console.log(
+        chalk.underline.white('Integration test using: ' + translatorLib)
+    );
+
+    karma.start(config, done);
+});
+
+/**
+ * Task: karma:integration2x
+ *
+ * Run integrations tests against version 2.x of the Translation bundle.
+ */
+gulp.task('karma:integration2x', function(done) {
+    var translatorLib = 'translator-2.1.1.js',
+        config = integrationConfigFactory(translatorLib);
+
+    console.log(
+        chalk.underline.white('Integration test using: ' + translatorLib)
+    );
+
+    karma.start(config, done);
 });

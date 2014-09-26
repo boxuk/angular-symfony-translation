@@ -3,7 +3,6 @@
 goog.provide('boxuk.translation.trans.Filter.factory');
 
 /**
- * @ngInject
  * @constructor
  * @param {boxuk.translation.translator.Service} TranslationService
  */
@@ -39,7 +38,7 @@ TransFilter.prototype.trans = function(key, params, domain)
  */
 TransFilter.factory = function(TranslationService)
 {
-    var filter = new boxuk.translation.trans.Filter(TranslationService);
+    var filter = new TransFilter(TranslationService);
 
     return filter.trans;
 };
@@ -47,4 +46,4 @@ TransFilter.factory = function(TranslationService)
 /**
  * @type {TransFilter}
  */
-boxuk.translation.trans.Filter = TransFilter;
+boxuk.translation.trans.Filter.factory = TransFilter.factory;
