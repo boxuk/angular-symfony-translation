@@ -4,8 +4,7 @@
   "description": "Angular module for using translations exposed by Symfony2.",
   "main": "build/app.js",
   "scripts": {
-    "test": "gulp lint:ci && gulp karma:ci && gulp karma:integration",
-    "prepublish": "bower install && gulp build"
+    "test": "gulp lint:ci && gulp karma:ci && gulp karma:integration"
   },
   "author": "Box UK <http://www.boxuk.com>",
   "license": "MIT",
