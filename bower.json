@@ -8,6 +8,7 @@
   "moduleType": [
     "global"
   ],
+  "main": "./build/app.js",
   "keywords": [
     "angular",
     "symfony",
