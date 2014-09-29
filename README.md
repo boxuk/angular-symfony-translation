@@ -24,9 +24,9 @@ by the above mentioned Symfony2 bundle from within your Angular app.
 
 ## Installation
 
-`npm install --save angular-symfony-translation`
-
-*(To do: Publish to Bower)*
+* `bower install --save angular-symfony-translation`
+or
+* `npm install --save angular-symfony-translation`
 
 Include the file before your Angular app (either as a `<script>` tag or as part
 of your build script).
