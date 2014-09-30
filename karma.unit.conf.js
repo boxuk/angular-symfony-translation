@@ -39,6 +39,9 @@ config.files = [
     }
 ];
 
+// Use coverage reporter
+config.reporters.push('coverage');
+
 /**
  * @type {*|Object}
  */
