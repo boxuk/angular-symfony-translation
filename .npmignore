@@ -6,6 +6,8 @@ coverage
 gulp-tasks
 Gulpfile.js
 TODO.md
-karma.conf.js
+karma.*.conf.js
 jsdoc.json
 closure.config.js
+test
+externs
