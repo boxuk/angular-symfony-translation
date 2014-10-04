@@ -1,4 +1,4 @@
-AngularJS Translations, powered by Symfony2 ![](https://magnum.travis-ci.com/boxuk/angular-symfony-translation.svg?token=yDqUrgrJURXsZ4rVxPDd&branch=master)
+AngularJS Translations, powered by Symfony2 [![Build Status](https://travis-ci.org/boxuk/angular-symfony-translation.svg)](https://travis-ci.org/boxuk/angular-symfony-translation)
 ===========================================
 
 > Integrates BazingaJS Translation bundle with AngularJS.
