@@ -14,7 +14,7 @@ gulp.task('build', function() {
         src;
 
     config = closureConfig.createConfig({
-        fileName: 'app.js'
+        fileName: 'angular-symfony-translation.js'
     });
 
     src = [
@@ -25,5 +25,5 @@ gulp.task('build', function() {
 
     return gulp.src(src)
         .pipe(closureCompiler(config))
-        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./dist'))
 });

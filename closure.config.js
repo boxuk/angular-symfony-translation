@@ -57,7 +57,7 @@ exports.createConfig = function(options)
             'externs/translator.js'
         ],
 
-        js_output_file: 'build/' + fileName,
+        js_output_file: 'dist/' + fileName,
 
         // Wrap compiled code in IIFE to protect global namespace,
         // and add URL to sourcemap.
@@ -65,7 +65,7 @@ exports.createConfig = function(options)
             '//# sourceMappingURL=' + fileName + '.map',
 
         // Generate source maps
-        create_source_map: 'build/' + fileName + '.map',
+        create_source_map: 'dist/' + fileName + '.map',
 
         source_map_format: 'V3'
 
