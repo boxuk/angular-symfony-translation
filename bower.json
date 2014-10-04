@@ -33,7 +33,7 @@
     "angular-mocks": "~1.2.25",
     "es5-shim": "~4.0.3",
     "closure-compiler": "~0.2.6",
-    "closure-library-externs": "git@github.com:google/closure-compiler.git#v20140814",
+    "closure-library-externs": "https://github.com/google/closure-compiler.git#v20140814",
     "closurelibrary": "*"
   }
 }

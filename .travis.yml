@@ -25,6 +25,7 @@ matrix:
 
 install:
   - npm install
+  - bower install
 
 script:
   - gulp lint:ci
