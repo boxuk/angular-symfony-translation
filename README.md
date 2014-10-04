@@ -28,7 +28,7 @@ by the above mentioned Symfony2 bundle from within your Angular app.
 or
 * `npm install --save angular-symfony-translation`
 
-Include the file before your Angular app (either as a `<script>` tag or as part
+Include `build/app.js` before your Angular app (either as a `<script>` tag or as part
 of your build script).
 
 List the module as a dependency of your app:
