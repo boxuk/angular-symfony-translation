@@ -46,7 +46,7 @@ var createIntegrationTestConfig = function(translatorFilename)
         // Closure library
         'bower_components/closurelibrary/closure/goog/base.js',
 
-        'build/app.js',
+        'dist/angular-symfony-translation.js',
 
         // Translator library
         'test/lib/' + translatorFilename,
