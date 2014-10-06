@@ -1,5 +1,6 @@
-AngularJS Translations, powered by Symfony2 [![Build Status](https://travis-ci.org/boxuk/angular-symfony-translation.svg)](https://travis-ci.org/boxuk/angular-symfony-translation) [![Code Climate](https://codeclimate.com/github/boxuk/angular-symfony-translation/badges/gpa.svg)](https://codeclimate.com/github/boxuk/angular-symfony-translation) [![Coverage Status](https://img.shields.io/coveralls/boxuk/angular-symfony-translation.svg)](https://coveralls.io/r/boxuk/angular-symfony-translation)
+AngularJS Translations, powered by Symfony2
 ===========================================
+[![NPM version](https://badge.fury.io/js/angular-symfony-translation.png)](https://www.npmjs.org/package/angular-symfony-translation) [![Build Status](https://travis-ci.org/boxuk/angular-symfony-translation.svg)](https://travis-ci.org/boxuk/angular-symfony-translation) [![Code Climate](https://codeclimate.com/github/boxuk/angular-symfony-translation/badges/gpa.svg)](https://codeclimate.com/github/boxuk/angular-symfony-translation) [![Coverage Status](https://img.shields.io/coveralls/boxuk/angular-symfony-translation.svg)](https://coveralls.io/r/boxuk/angular-symfony-translation)
 
 > Integrates BazingaJS Translation bundle with AngularJS.
 
