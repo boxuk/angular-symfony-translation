@@ -38,8 +38,7 @@ module.exports = {
     },
 
     reporters: [
-        'spec',
-        'coverage'
+        'spec'
     ],
 
     browsers: [
@@ -47,7 +46,7 @@ module.exports = {
     ],
 
     coverageReporter: {
-        type: 'html',
+        type: 'lcov',
         dir: 'coverage'
     }
 

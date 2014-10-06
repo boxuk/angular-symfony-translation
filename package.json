@@ -4,6 +4,7 @@
   "description": "Angular module for using translations exposed by Symfony2.",
   "main": "dist/angular-symfony-translation.js",
   "scripts": {
+    "postinstall": "node_modules/.bin/bower install",
     "test": "gulp lint:ci && gulp karma:ci && gulp karma:integration"
   },
   "author": "Box UK <http://www.boxuk.com>",
@@ -12,7 +13,9 @@
     "bower": "^1.3.11",
     "chalk": "^0.5.1",
     "closure-compiler-stream": "^0.1.13",
+    "coveralls": "^2.11.2",
     "gulp": "^3.8.8",
+    "gulp-coveralls": "^0.1.3",
     "gulp-gjslint": "^0.1.3",
     "jasmine-spec-reporter": "^0.6.0",
     "jsdoc": "^3.3.0-alpha9",

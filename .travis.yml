@@ -32,3 +32,6 @@ script:
   - gulp karma:ci
   - gulp karma:integration1x
   - gulp karma:integration2x
+
+after_script:
+  - gulp coveralls
