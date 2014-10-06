@@ -1,12 +1,16 @@
 {
   "name": "angular-symfony-translation",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Angular module for using translations exposed by Symfony2.",
   "main": "dist/angular-symfony-translation.js",
   "scripts": {
     "postinstall": "node_modules/.bin/bower install",
     "test": "gulp lint:ci && gulp karma:ci && gulp karma:integration",
     "coveralls": "cat coverage/**/lcov.info | node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boxuk/angular-symfony-translation.git"
   },
   "author": "Box UK <http://www.boxuk.com>",
   "license": "MIT",
