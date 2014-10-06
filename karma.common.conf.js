@@ -43,11 +43,6 @@ module.exports = {
 
     browsers: [
         'PhantomJS'
-    ],
-
-    coverageReporter: {
-        type: 'lcov',
-        dir: 'coverage'
-    }
+    ]
 
 };
