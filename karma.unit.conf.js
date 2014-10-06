@@ -11,6 +11,11 @@
  */
 var config = require('./karma.common.conf');
 
+config.coverageReporter = {
+    type: 'lcov',
+    dir: 'coverage'
+};
+
 config.files = [
     // Vendor
     'bower_components/es5-shim/es5-shim.js',
@@ -40,7 +45,7 @@ config.files = [
 ];
 
 // Use coverage reporter
-config.reporters.push('coverage');
+config.reporters = ['spec', 'coverage'];
 
 /**
  * @type {*|Object}

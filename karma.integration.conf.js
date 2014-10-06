@@ -73,6 +73,8 @@ var createIntegrationTestConfig = function(translatorFilename)
         }
     ];
 
+    config.reporters = ['spec'];
+
     return config;
 };
 

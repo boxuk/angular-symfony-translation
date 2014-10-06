@@ -33,5 +33,5 @@ script:
   - gulp karma:integration1x
   - gulp karma:integration2x
 
-after_script:
-  - gulp coveralls
+after_success:
+  - npm run coveralls
