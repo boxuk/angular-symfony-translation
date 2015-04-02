@@ -84,6 +84,59 @@ salmon: "{0} No salmon today, sorry.|{1} We have a single salmon!|[1,Inf] Woah, 
 <p>{{ 'salmon' | transChoice: 5: {'count': 5}: 'my_domain' }}</p>
 ```
 
+#### `TranslationService`:
+
+Both of the above filters make use of the translation service, which either directly exposes the `Translator`
+object from the *BazingaJS Translation bundle* (for version 2.x of the bundle) or exposes a 2.x to 1.x adapter.
+
+Exposes the same interface as the 2.x version of the bundle: [see the bundle documentation for more details](https://github.com/willdurand/BazingaJsTranslationBundle/blob/v2.2.0/Resources/doc/index.md#the-js-translator).
+
+##### `trans`
+
+###### Parameters
+
+| Name   | Type    | Description                             |
+|--------|---------|-----------------------------------------|
+| key    | String  | The translation key to lookup           |
+| params | Object= | Translation parameters                  |
+| domain | String= | The domain to use (default: `messages`) |
+
+##### `transChoice`
+
+###### Parameters
+
+| Name   | Type    | Description                             |
+|--------|---------|-----------------------------------------|
+| key    | String  | The translation key to lookup           |
+| count  | Number  | The number to use for pluralization     |
+| params | Object= | Translation parameters                  |
+| domain | String= | The domain to use (default: `messages`) |
+
+##### Service usage
+
+```javascript
+function DogsController(TranslationService, DogsService) {
+  /**
+   * @type {Array.<Dog>}
+   */
+  var dogs = DogsService.getDogs();
+  
+  /**
+   * Getting a simple translation
+   *
+   * @type {String}
+   */
+  var title = TranslationService.trans('some_title');
+  
+  /**
+   * Using pluralization
+   *
+   * @type {String}
+   */
+  var message = TranslationService.transChoice('number_of_dogs', dogs.length);
+}
+```
+
 ## System overview
 
 Probably only relevant if you're planning on developing this further:
