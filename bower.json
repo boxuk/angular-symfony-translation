@@ -8,7 +8,7 @@
   "moduleType": [
     "global"
   ],
-  "main": "./dist/angular-symfony-translation",
+  "main": "./dist/angular-symfony-translation.js",
   "keywords": [
     "angular",
     "symfony",
