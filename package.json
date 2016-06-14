@@ -4,7 +4,7 @@
   "description": "Angular module for using translations exposed by Symfony2.",
   "main": "dist/angular-symfony-translation.js",
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install",
+    "develop": "node_modules/.bin/bower install",
     "test": "gulp lint:ci && gulp karma:ci && gulp karma:integration",
     "coveralls": "cat coverage/**/lcov.info | node_modules/coveralls/bin/coveralls.js"
   },
